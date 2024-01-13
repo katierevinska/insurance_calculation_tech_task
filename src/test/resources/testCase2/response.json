@@ -4,13 +4,15 @@
     "riskDTOS": [
       {
         "riskName": "FIRE",
-        "riskPremium": 240
+        "riskPremium": 500.00,
+        "riskCoefficient": 0.024
       },
       {
         "riskName": "THEFT",
-        "riskPremium": 120
+        "riskPremium": 102.51,
+        "riskCoefficient": 0.05
       }
     ],
-    "totalPremium": 3.6E+2
+    "totalPremium": 17.13
   }
 }

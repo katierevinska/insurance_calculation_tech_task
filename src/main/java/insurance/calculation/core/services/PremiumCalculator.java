@@ -19,19 +19,23 @@ public class PremiumCalculator {
     private List<RiskPremiumCalculator> riskPremiumCalculators;
 
     public CalculatePremiumResult calculate(Policy policy){
-        List<RiskDTO> riskDTOList = calculateRiskDTOS(policy);
+        List<RiskDTO> riskDTOList = riskPremiumCalculators.stream()
+                .map(calculator -> calculateRiskDTO(policy, calculator))
+                .collect(Collectors.toList());
         BigDecimal totalPremium = riskDTOList.stream()
-                        .map(RiskDTO::getRiskPremium)
+                        .map(this::calculatePremiumWithCoefficient)
                         .reduce(BigDecimal.ZERO, BigDecimal::add)
                         .setScale(2, RoundingMode.HALF_UP)
                         .stripTrailingZeros();
         return new CalculatePremiumResult(totalPremium, riskDTOList);
     }
-    private List<RiskDTO> calculateRiskDTOS(Policy policy){
-        return riskPremiumCalculators.stream()
-                .map(calculator ->
-                        new RiskDTO(calculator.getRiskName(), calculator.calculateRiskPremium(policy)))
-                .collect(Collectors.toList());
-
+    private BigDecimal calculatePremiumWithCoefficient(RiskDTO riskDTO){
+        return riskDTO.getRiskPremium()
+                .multiply(riskDTO.getRiskCoefficient())
+                .setScale(2, RoundingMode.HALF_UP);
+    }
+    private RiskDTO calculateRiskDTO(Policy policy, RiskPremiumCalculator calculator){
+        BigDecimal premium = calculator.calculateRiskPremium(policy);
+        return new RiskDTO(calculator.getRiskName(), premium, calculator.getCoefficientByCost(premium));
     }
 }

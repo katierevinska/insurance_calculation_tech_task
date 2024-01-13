@@ -7,13 +7,13 @@
       "subObjects": [
         {
           "subObjectName": "TV",
-          "insuranceCost": 120,
-          "riskType": "THEFT"
+          "insuranceCost": 100.00,
+          "riskType": "FIRE"
         },
         {
           "subObjectName": "Fridge",
-          "insuranceCost": 240,
-          "riskType": "FIRE"
+          "insuranceCost": 8.00,
+          "riskType": "THEFT"
         }
       ]
     }

@@ -15,4 +15,6 @@ public abstract class RiskPremiumCalculator {
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
     public abstract String getRiskName();
+    public abstract BigDecimal getCoefficientByCost(BigDecimal insuranceCost);
+
 }
