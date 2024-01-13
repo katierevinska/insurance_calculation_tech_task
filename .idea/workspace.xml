@@ -4,17 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="642ff95e-e1fe-4fcb-8e92-76f059b4370d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/InsuranceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+    <list default="true" id="642ff95e-e1fe-4fcb-8e92-76f059b4370d" name="Changes" comment="create project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/CalculatePremiumResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/ErrorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/RiskDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/CalculatePremiumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/CalculatePremiumServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/PremiumCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorFireRisk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorTheftRisk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/RiskPremiumCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validators/PolicyValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/CalculatePremiumResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/Policy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicyObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicySubObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/rest/CalculatePremiumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testCase/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testCase/response.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/InsuranceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/InsuranceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +38,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,11 +60,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "D:/insurance_calculator_tech_task/tech_solution",
+    "last_opened_file_path": "D:/bsu-java-internship-2023",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tech_solution\src\main\java\insurance\calculation\core" />
+      <recent name="D:\tech_solution\src\main\java\insurance\calculation" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\tech_solution\src\test\resources\testCase" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="insurance.calculation.core.services.calculators" />
+      <recent name="insurance.calculation.rest" />
+      <recent name="insurance.calculation.core" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.InsuranceApplication (1)">
+    <configuration name="InsuranceApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="insurance.calculation.InsuranceApplication" />
+      <module name="tech_solution.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="insurance.calculation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InsuranceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="insurance.calculation.InsuranceApplication" />
       <module name="tech_solution" />
@@ -60,6 +107,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsuranceApplication (1)" />
         <item itemvalue="Application.InsuranceApplication" />
       </list>
     </recent_temporary>
@@ -73,6 +121,18 @@
       <option name="presentableId" value="Default" />
       <updated>1705091325822</updated>
     </task>
+    <task id="LOCAL-00001" summary="create project">
+      <created>1705092700303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705092700303</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create project" />
+    <option name="LAST_COMMIT_MESSAGE" value="create project" />
   </component>
 </project>

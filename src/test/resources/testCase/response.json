@@ -1,0 +1,16 @@
+{
+  "validationErrors": null,
+  "calculatePremiumResult": {
+    "riskDTOS": [
+      {
+        "riskName": "FIRE",
+        "riskPremium": 240
+      },
+      {
+        "riskName": "THEFT",
+        "riskPremium": 120
+      }
+    ],
+    "totalPremium": 3.6E+2
+  }
+}

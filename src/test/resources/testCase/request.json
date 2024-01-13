@@ -1,0 +1,21 @@
+{
+  "policyNumber": "LV20-02-100000-5",
+  "status": "REGISTERED",
+  "policyObjects": [
+    {
+      "objectName": "House",
+      "subObjects": [
+        {
+          "subObjectName": "TV",
+          "insuranceCost": 120,
+          "riskType": "THEFT"
+        },
+        {
+          "subObjectName": "Fridge",
+          "insuranceCost": 240,
+          "riskType": "FIRE"
+        }
+      ]
+    }
+  ]
+}
