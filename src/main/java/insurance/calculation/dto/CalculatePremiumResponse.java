@@ -1,26 +1,24 @@
 package insurance.calculation.dto;
 
-import insurance.calculation.core.dto.CalculatePremiumResult;
-import insurance.calculation.core.dto.ErrorDTO;
-
 import java.util.List;
 
 public class CalculatePremiumResponse {
-    private List<ErrorDTO> validationErrors;
-    private CalculatePremiumResult calculatePremiumResult;
 
-    public CalculatePremiumResponse(List<ErrorDTO> validationErrors) {
+    private List<ValidationError> validationErrors;
+    private PremiumResult premiumResult;
+
+    public CalculatePremiumResponse(List<ValidationError> validationErrors) {
         this.validationErrors = validationErrors;
     }
-    public CalculatePremiumResponse(CalculatePremiumResult premiumResult){
-        this.calculatePremiumResult = premiumResult;
+    public CalculatePremiumResponse(PremiumResult premiumResult){
+        this.premiumResult = premiumResult;
     }
 
-    public CalculatePremiumResult getCalculatePremiumResult() {
-        return calculatePremiumResult;
+    public PremiumResult getCalculatePremiumResult() {
+        return premiumResult;
     }
 
-    public List<ErrorDTO> getValidationErrors() {
+    public List<ValidationError> getValidationErrors() {
         return validationErrors;
     }
 }

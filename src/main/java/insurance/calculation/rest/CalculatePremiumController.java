@@ -19,7 +19,6 @@ public class CalculatePremiumController {
 			consumes = "application/json",
 			produces = "application/json")
 	public CalculatePremiumResponse calculatePremium(@RequestBody Policy policy) {
-		System.out.println(calculatePremiumService.calculatePremium(policy).getCalculatePremiumResult());
 		return calculatePremiumService.calculatePremium(policy);
 	}
 

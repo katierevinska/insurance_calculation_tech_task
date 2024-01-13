@@ -1,6 +1,5 @@
-package insurance.calculation.core.services.calculators;
+package insurance.calculation.core.calculation.calculators;
 
-import insurance.calculation.dto.Policy;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;

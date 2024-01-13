@@ -5,16 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642ff95e-e1fe-4fcb-8e92-76f059b4370d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testCase2/request.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testCase2/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/util/Placeholder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/util/ValidationErrorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/InsuranceCostSubObjectValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicyObjectValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicySubObjectValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/PolicyErrorListValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/RiskTypeSubObjectValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/singl_error_validators/ListPolicyObjectsErrorValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyErrorValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyNumberErrorValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyStatusErrorValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/errorCodes.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/RiskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/RiskDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/PremiumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/PremiumCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorFireRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorFireRisk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorTheftRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorTheftRisk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/RiskPremiumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/RiskPremiumCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase/request.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testCase1/request.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase/response.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testCase1/response.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/CalculatePremiumResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PremiumResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/ErrorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/ValidationError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/dto/RiskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/RiskPremium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/CalculatePremiumServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/CalculatePremiumServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/PremiumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/calculation/PremiumCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorFireRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorFireRisk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/PremiumCalculatorTheftRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorTheftRisk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/services/calculators/RiskPremiumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/calculation/calculators/RiskPremiumCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validators/PolicyValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/PolicyValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/CalculatePremiumResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/CalculatePremiumResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/Policy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/rest/CalculatePremiumController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/rest/CalculatePremiumController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase1/response.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testCase1/response.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase2/response.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testCase2/response.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +64,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "D:/tech_solution/src/test/resources",
+    "last_opened_file_path": "D:/bsu-java-internship-2023",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
@@ -61,6 +78,7 @@
       <recent name="D:\tech_solution\src\test\resources\testCase" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="insurance.calculation.core.validation.validators" />
       <recent name="insurance.calculation.core.services.calculators" />
       <recent name="insurance.calculation.rest" />
       <recent name="insurance.calculation.core" />
@@ -123,12 +141,20 @@
       <option name="project" value="LOCAL" />
       <updated>1705144783032</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="incomplete: add coefficient in calculation">
+      <created>1705149697495</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705149697495</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
     <MESSAGE value="work in progress: implementation of controller, service, dto; no tests, validators and coefficients" />
-    <option name="LAST_COMMIT_MESSAGE" value="work in progress: implementation of controller, service, dto; no tests, validators and coefficients" />
+    <MESSAGE value="incomplete: add coefficient in calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="incomplete: add coefficient in calculation" />
   </component>
 </project>

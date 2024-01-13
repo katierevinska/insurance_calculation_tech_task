@@ -10,4 +10,12 @@ public class Policy {
    public ArrayList<PolicyObject> getPolicyObjects() {
       return policyObjects;
    }
+
+   public String getPolicyNumber() {
+      return policyNumber;
+   }
+
+   public String getStatus() {
+      return status;
+   }
 }

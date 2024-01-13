@@ -1,4 +1,4 @@
-package insurance.calculation.core.services.calculators;
+package insurance.calculation.core.calculation.calculators;
 
 import insurance.calculation.dto.Policy;
 import insurance.calculation.dto.PolicySubObject;

@@ -1,6 +1,7 @@
 {
   "validationErrors": null,
   "calculatePremiumResult": {
+    "policyNumber": "LV20-02-100000-5",
     "riskDTOS": [
       {
         "riskName": "FIRE",
