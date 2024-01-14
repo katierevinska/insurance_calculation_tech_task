@@ -1,6 +1,7 @@
 package insurance.calculation.core.validation;
 
-import insurance.calculation.core.validation.validators.list_error_validators.PolicyErrorListValidator;
+import insurance.calculation.core.validation.validators.list_error_validators.PolicyListErrorValidator;
+import insurance.calculation.core.validation.validators.list_error_validators.sub_objects.PolicySubObjectErrorListValidator;
 import insurance.calculation.core.validation.validators.singl_error_validators.PolicyErrorValidator;
 import insurance.calculation.dto.ValidationError;
 import insurance.calculation.dto.Policy;
@@ -17,7 +18,7 @@ public class PolicyValidation {
     @Autowired
     List<PolicyErrorValidator> policyErrorValidators;
     @Autowired
-    List<PolicyErrorListValidator> policyErrorListValidators;
+    List<PolicyListErrorValidator> policyListErrorValidators;
 
     public List<ValidationError> validate(Policy policy) {
         return concatenateLists(getSingleErrors(policy), getListErrors(policy));
@@ -32,7 +33,7 @@ public class PolicyValidation {
     }
 
     private List<ValidationError> getListErrors(Policy policy) {
-        return policyErrorListValidators.stream()
+        return policyListErrorValidators.stream()
                 .map(validator -> validator.validate(policy))
                 .flatMap(Collection::stream)
                 .collect(Collectors.toList());

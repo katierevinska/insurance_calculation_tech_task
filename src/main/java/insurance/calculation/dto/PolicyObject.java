@@ -1,16 +1,17 @@
 package insurance.calculation.dto;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PolicyObject {
     private String objectName;
-    private ArrayList<PolicySubObject> subObjects;
+    private List<PolicySubObject> subObjects;
 
     public String getObjectName() {
         return objectName;
     }
 
-    public ArrayList<PolicySubObject> getSubObjects() {
+    public List<PolicySubObject> getSubObjects() {
         return subObjects;
     }
 }

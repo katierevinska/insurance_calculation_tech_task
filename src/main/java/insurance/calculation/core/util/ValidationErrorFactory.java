@@ -16,13 +16,15 @@ public class ValidationErrorFactory {
 
     public ValidationError errorByCode(String errorCode) {
         return new ValidationError(errorCode,
-                environment.getProperty(errorCode, "description is missing"));
+                environment.getProperty(errorCode));
     }
 
     public ValidationError errorByCode(String errorCode, List<Placeholder> placeholders) {
-        String description = environment.getProperty(errorCode, "description is missing");
-        placeholders.forEach(placeholder ->
-                description.replace("{" + placeholder.getName() + "}", placeholder.getValue()));
+        String description = environment.getProperty(errorCode);
+        for(var placeholder: placeholders){
+            description =  description.replace("{" + placeholder.getName() + "}", placeholder.getValue());
+        }
         return new ValidationError(errorCode, description);
+
     }
 }

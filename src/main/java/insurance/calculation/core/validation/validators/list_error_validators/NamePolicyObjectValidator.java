@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 @Component
-class NamePolicyObjectValidator implements PolicyErrorListValidator {
+class NamePolicyObjectValidator implements PolicyListErrorValidator {
     @Autowired
     ValidationErrorFactory errorFactory;
 
