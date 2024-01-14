@@ -1,8 +1,8 @@
 package insurance.calculation.dto;
 
 public class ValidationError {
-    private String errorDescription;
-    private String errorCode;
+    private final String errorDescription;
+    private final String errorCode;
     public ValidationError(String errorCode, String errorDescription){
         this.errorCode = errorCode;
         this.errorDescription = errorDescription;

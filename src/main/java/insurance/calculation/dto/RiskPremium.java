@@ -3,10 +3,10 @@ package insurance.calculation.dto;
 import java.math.BigDecimal;
 
 public class RiskPremium {
-    private String riskName;
-    private BigDecimal riskPremium;
+    private final String riskName;
+    private final BigDecimal riskPremium;
 
-    private BigDecimal riskCoefficient;
+    private final BigDecimal riskCoefficient;
 
     public String getRiskName() {
         return riskName;

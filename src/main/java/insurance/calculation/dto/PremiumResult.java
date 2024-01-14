@@ -5,9 +5,9 @@ import java.util.List;
 
 public class PremiumResult {
 
-    private String policyNumber;
-    private List<RiskPremium> riskPremiums;
-    private BigDecimal totalPremium;
+    private final String policyNumber;
+    private final List<RiskPremium> riskPremiums;
+    private final BigDecimal totalPremium;
 
     public BigDecimal getTotalPremium() {
         return totalPremium;
