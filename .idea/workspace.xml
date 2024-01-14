@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642ff95e-e1fe-4fcb-8e92-76f059b4370d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/Policy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicyObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicyObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicySubObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicySubObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PremiumResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PremiumResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/RiskPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/RiskPremium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/ValidationError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/ValidationError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,8 +206,26 @@
       <option name="project" value="LOCAL" />
       <updated>1705257028461</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add last tests">
+      <created>1705262382624</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705262382625</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
