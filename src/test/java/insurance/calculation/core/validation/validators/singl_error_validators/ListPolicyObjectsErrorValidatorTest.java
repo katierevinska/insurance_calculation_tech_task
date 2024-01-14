@@ -19,9 +19,9 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 class ListPolicyObjectsErrorValidatorTest {
     @InjectMocks
-    ListPolicyObjectsErrorValidator listPolicyObjectsErrorValidator;
+    private ListPolicyObjectsErrorValidator listPolicyObjectsErrorValidator;
     @Mock
-    ValidationErrorFactory errorFactory;
+    private ValidationErrorFactory errorFactory;
 
     @Test
     public void returnErrorListNull() {

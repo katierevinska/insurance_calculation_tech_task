@@ -21,9 +21,9 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class NamePolicyObjectValidatorTest {
     @InjectMocks
-    NamePolicyObjectValidator namePolicyObjectValidator;
+    private NamePolicyObjectValidator namePolicyObjectValidator;
     @Mock
-    ValidationErrorFactory errorFactory;
+    private ValidationErrorFactory errorFactory;
 
     @Test
     public void returnErrorNameIsNull(){

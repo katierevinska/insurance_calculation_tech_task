@@ -18,7 +18,7 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class PremiumCalculatorFireRiskTest {
     @InjectMocks
-    PremiumCalculatorFireRisk calculatorFireRisk;
+    private PremiumCalculatorFireRisk calculatorFireRisk;
 
     @Test
     public void testCalculationPremium() {

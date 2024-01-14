@@ -1,0 +1,9 @@
+{
+  "validationErrors": [
+    {
+      "errorDescription": "field policy sub-object name of object House must not be empty",
+      "errorCode": "EMPTY_SUB_OBJECT_NAME"
+    }
+  ],
+  "calculatePremiumResult": null
+}

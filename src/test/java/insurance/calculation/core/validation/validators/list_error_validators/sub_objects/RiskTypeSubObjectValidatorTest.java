@@ -22,9 +22,9 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class RiskTypeSubObjectValidatorTest {
     @InjectMocks
-    RiskTypeSubObjectValidator riskTypeSubObjectValidator;
+    private RiskTypeSubObjectValidator riskTypeSubObjectValidator;
     @Mock
-    ValidationErrorFactory errorFactory;
+    private ValidationErrorFactory errorFactory;
 
     @Test
     public void returnErrorRiskTypeIsNull(){

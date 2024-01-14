@@ -23,9 +23,9 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 class InsuranceCostSubObjectValidatorTest {
     @InjectMocks
-    InsuranceCostSubObjectValidator insuranceCostSubObjectValidator;
+    private InsuranceCostSubObjectValidator insuranceCostSubObjectValidator;
     @Mock
-    ValidationErrorFactory errorFactory;
+    private ValidationErrorFactory errorFactory;
     @Test
     public void returnError(){
         ValidationError error = mock(ValidationError.class);

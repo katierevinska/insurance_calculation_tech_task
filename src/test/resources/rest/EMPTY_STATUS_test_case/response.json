@@ -1,0 +1,9 @@
+{
+  "validationErrors": [
+    {
+      "errorDescription": "field policy status must not be empty",
+      "errorCode": "EMPTY_STATUS"
+    }
+  ],
+  "calculatePremiumResult": null
+}

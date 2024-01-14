@@ -18,9 +18,9 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class ValidationErrorFactoryTest {
     @InjectMocks
-    ValidationErrorFactory errorFactory;
+    private ValidationErrorFactory errorFactory;
     @Mock
-    Environment environment;
+    private Environment environment;
     @Test
     public void returnErrorByCode(){
         when(environment.getProperty(eq("ERROR_CODE"))).thenReturn("error description");

@@ -1,0 +1,21 @@
+{
+  "policyNumber": null,
+  "status": "REGISTERED",
+  "policyObjects": [
+    {
+      "objectName": "House",
+      "subObjects": [
+        {
+          "subObjectName": "TV",
+          "insuranceCost": 100.00,
+          "riskType": "FIRE"
+        },
+        {
+          "subObjectName": "Fridge",
+          "insuranceCost": 8.00,
+          "riskType": "THEFT"
+        }
+      ]
+    }
+  ]
+}

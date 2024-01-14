@@ -19,7 +19,7 @@ public class PolicyStatusErrorValidatorTest {
     @InjectMocks
     private PolicyStatusErrorValidator policyStatusErrorValidator;
     @Mock
-    ValidationErrorFactory errorFactory;
+    private ValidationErrorFactory errorFactory;
 
     @Test
     public void returnErrorNumberNull() {

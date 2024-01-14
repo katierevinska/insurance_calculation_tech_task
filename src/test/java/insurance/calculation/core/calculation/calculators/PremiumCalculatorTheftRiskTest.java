@@ -18,7 +18,7 @@ import static org.mockito.Mockito.when;
 @ExtendWith(MockitoExtension.class)
 public class PremiumCalculatorTheftRiskTest {
     @InjectMocks
-    PremiumCalculatorTheftRisk calculatorTheftRisk;
+    private PremiumCalculatorTheftRisk calculatorTheftRisk;
 
     @Test
     public void testCalculationPremium() {

@@ -1,0 +1,9 @@
+{
+  "validationErrors": [
+    {
+      "errorDescription": "field policy object list must not be empty",
+      "errorCode": "EMPTY_OBJECT_LIST"
+    }
+  ],
+  "calculatePremiumResult": null
+}

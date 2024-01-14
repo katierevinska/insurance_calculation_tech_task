@@ -5,33 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="642ff95e-e1fe-4fcb-8e92-76f059b4370d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/PolicyListErrorValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/PolicySubObjectErrorListValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/calculation/PremiumCalculatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorFireRiskTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorTheftRiskTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/services/CalculatePremiumServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/util/ValidationErrorFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/PolicyValidationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicyObjectValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/InsuranceCostSubObjectValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/NamePolicySubObjectValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/RiskTypeSubObjectValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/ListPolicyObjectsErrorValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyNumberErrorValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyStatusErrorValidatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/rest/CalculatePremiumComtrollerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/rest/CalculatePremiumControllerTestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_NUMBER_test_case/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_NUMBER_test_case/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_OBJECT_LIST_test_case/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_OBJECT_LIST_test_case/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_OBJECT_NAME_test_case/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_OBJECT_NAME_test_case/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_STATUS_test_case/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_STATUS_test_case/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_SUB_OBJECT_COST_test_case/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_SUB_OBJECT_COST_test_case/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_SUB_OBJECT_NAME_test_case/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_SUB_OBJECT_NAME_test_case/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_SUB_OBJECT_RISK_TYPE_test_case/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/EMPTY_SUB_OBJECT_RISK_TYPE_test_case/response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/NO_ERRORS_test_case_1/request.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/rest/NO_ERRORS_test_case_1/response.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/util/ValidationErrorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/util/ValidationErrorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/PolicyValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/PolicyValidation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/InsuranceCostSubObjectValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/InsuranceCostSubObjectValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicyObjectValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicyObjectValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicySubObjectValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/NamePolicySubObjectValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/PolicyErrorListValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/RiskTypeSubObjectValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/RiskTypeSubObjectValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/Policy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/Policy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicyObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/insurance/calculation/dto/PolicyObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/errorCodes.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/errorCodes.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorFireRiskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorFireRiskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorTheftRiskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/calculation/calculators/PremiumCalculatorTheftRiskTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/util/ValidationErrorFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/util/ValidationErrorFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicyObjectValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/NamePolicyObjectValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/InsuranceCostSubObjectValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/InsuranceCostSubObjectValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/NamePolicySubObjectValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/NamePolicySubObjectValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/RiskTypeSubObjectValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/list_error_validators/sub_objects/RiskTypeSubObjectValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/ListPolicyObjectsErrorValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/ListPolicyObjectsErrorValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyNumberErrorValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyNumberErrorValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyStatusErrorValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/core/validation/validators/singl_error_validators/PolicyStatusErrorValidatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/insurance/calculation/rest/CalculatePremiumComtrollerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/insurance/calculation/rest/CalculatePremiumControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase1/request.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase1/response.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase2/request.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/rest/NO_ERRORS_test_case_2/request.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testCase2/response.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/rest/NO_ERRORS_test_case_2/response.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,18 +74,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "D:/bsu-java-internship-2023",
+    "last_opened_file_path": "D:/tech_solution/src/test/resources/EMPTY_SUB_OBJECT_RISK_TYPE_test_case",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\tech_solution\src\test\java\insurance\calculation\core" />
-      <recent name="D:\tech_solution\src\test\resources" />
-      <recent name="D:\tech_solution\src\main\java\insurance\calculation\core" />
-      <recent name="D:\tech_solution\src\main\java\insurance\calculation" />
+      <recent name="D:\tech_solution\src\test\resources\EMPTY_SUB_OBJECT_RISK_TYPE_test_case" />
+      <recent name="D:\tech_solution\src\test\resources\EMPTY_SUB_OBJECT_NAME_test_case" />
+      <recent name="D:\tech_solution\src\test\resources\EMPTY_SUB_OBJECT_COST_test_case" />
+      <recent name="D:\tech_solution\src\test\resources\EMPTY_STATUS_test_case" />
+      <recent name="D:\tech_solution\src\test\resources\EMPTY_OBJECT_NAME_test_case" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\tech_solution\src\test\resources\rest" />
+      <recent name="D:\tech_solution\src\test\resources\rest\" />
       <recent name="D:\tech_solution\src\test\resources\testCase" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -92,35 +102,31 @@
       <recent name="insurance.calculation.core" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PremiumCalculatorTheftRiskTest">
-    <configuration name="PolicyValidationTest.validateBothErrors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tech_solution.test" />
+  <component name="RunManager" selected="JUnit.CalculatePremiumControllerTestCases">
+    <configuration name="InsuranceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="insurance.calculation.InsuranceApplication" />
+      <module name="tech_solution.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="insurance.calculation.core.validation.*" />
+          <option name="PATTERN" value="insurance.calculation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="insurance.calculation.core.validation" />
-      <option name="MAIN_CLASS_NAME" value="insurance.calculation.core.validation.PolicyValidationTest" />
-      <option name="METHOD_NAME" value="validateBothErrors" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolicyValidationTest.validateSingleErrors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculatePremiumControllerTestCases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tech_solution.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="insurance.calculation.core.validation.*" />
+          <option name="PATTERN" value="insurance.calculation.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="insurance.calculation.core.validation" />
-      <option name="MAIN_CLASS_NAME" value="insurance.calculation.core.validation.PolicyValidationTest" />
-      <option name="METHOD_NAME" value="validateSingleErrors" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="insurance.calculation.rest" />
+      <option name="MAIN_CLASS_NAME" value="insurance.calculation.rest.CalculatePremiumControllerTestCases" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -173,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculatePremiumControllerTestCases" />
+        <item itemvalue="Application.InsuranceApplication" />
         <item itemvalue="JUnit.PremiumCalculatorTheftRiskTest" />
         <item itemvalue="JUnit.PremiumCalculatorFireRiskTest.testCalculationPremium" />
         <item itemvalue="JUnit.PremiumCalculatorFireRiskTest" />
-        <item itemvalue="JUnit.PolicyValidationTest.validateBothErrors" />
-        <item itemvalue="JUnit.PolicyValidationTest.validateSingleErrors" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705169270774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="incomplete: add some tests">
+      <created>1705228282338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705228282338</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -226,6 +239,7 @@
     <MESSAGE value="work in progress: implementation of controller, service, dto; no tests, validators and coefficients" />
     <MESSAGE value="incomplete: add coefficient in calculation" />
     <MESSAGE value="incomplete: add validation om policy fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="incomplete: add validation om policy fields" />
+    <MESSAGE value="incomplete: add some tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="incomplete: add some tests" />
   </component>
 </project>
