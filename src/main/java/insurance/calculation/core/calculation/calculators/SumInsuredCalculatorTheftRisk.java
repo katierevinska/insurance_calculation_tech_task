@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 
 @Component
-@PropertySource("classpath:risk_coefficient.properties")
+@PropertySource("classpath:risk_coefficients.properties")
 class SumInsuredCalculatorTheftRisk extends RiskSumInsuredCalculator {
     @Value("${THEFT_RISK_COEFFICIENT_1}")
     private BigDecimal riskCoefficient1;

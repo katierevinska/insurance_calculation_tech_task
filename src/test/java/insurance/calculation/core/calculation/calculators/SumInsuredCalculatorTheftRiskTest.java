@@ -3,10 +3,12 @@ package insurance.calculation.core.calculation.calculators;
 import insurance.calculation.dto.Policy;
 import insurance.calculation.dto.PolicyObject;
 import insurance.calculation.dto.PolicySubObject;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.util.ReflectionTestUtils;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -19,7 +21,13 @@ import static org.mockito.Mockito.when;
 public class SumInsuredCalculatorTheftRiskTest {
     @InjectMocks
     private SumInsuredCalculatorTheftRisk calculatorTheftRisk;
+    @BeforeEach
+    public void setProperties(){
+        ReflectionTestUtils.setField(calculatorTheftRisk, "riskCoefficient1", BigDecimal.valueOf(0.11));
+        ReflectionTestUtils.setField(calculatorTheftRisk, "riskCoefficient2", BigDecimal.valueOf(0.05));
+        ReflectionTestUtils.setField(calculatorTheftRisk, "riskThreshold", BigDecimal.valueOf(15));
 
+    }
     @Test
     public void testCalculationPremium() {
         Policy policy = mock(Policy.class);
