@@ -1,11 +1,20 @@
 package insurance.calculation.core.calculation.calculators;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
 @Component
+@PropertySource("classpath:risk_coefficient.properties")
 class SumInsuredCalculatorTheftRisk extends RiskSumInsuredCalculator {
+    @Value("${THEFT_RISK_COEFFICIENT_1}")
+    private BigDecimal riskCoefficient1;
+    @Value("${THEFT_RISK_COEFFICIENT_2}")
+    private BigDecimal riskCoefficient2;
+    @Value("${THEFT_RISK_THRESHOLD}")
+    private BigDecimal riskThreshold;
     @Override
     public String getRiskName() {
         return "THEFT";
@@ -13,9 +22,7 @@ class SumInsuredCalculatorTheftRisk extends RiskSumInsuredCalculator {
 
     @Override
     public BigDecimal getCoefficientByCost(BigDecimal insuranceCost) {
-        if(insuranceCost.compareTo(BigDecimal.valueOf(15)) < 0){
-            return BigDecimal.valueOf(0.11);
-        }
-        return BigDecimal.valueOf(0.05);
+        return insuranceCost.compareTo(riskThreshold) < 0
+                ? riskCoefficient1 : riskCoefficient2;
     }
 }
