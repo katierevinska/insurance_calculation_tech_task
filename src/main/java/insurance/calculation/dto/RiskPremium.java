@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class RiskPremium {
     private final String riskName;
-    private final BigDecimal riskPremium;
+    private final BigDecimal riskSumInsured;
 
     private final BigDecimal riskCoefficient;
 
@@ -12,17 +12,17 @@ public class RiskPremium {
         return riskName;
     }
 
-    public BigDecimal getRiskPremium() {
-        return riskPremium;
+    public BigDecimal getRiskSumInsured() {
+        return riskSumInsured;
     }
 
     public BigDecimal getRiskCoefficient() {
         return riskCoefficient;
     }
 
-    public RiskPremium(String riskName, BigDecimal riskPremium, BigDecimal riskCoefficient){
+    public RiskPremium(String riskName, BigDecimal riskSumInsured, BigDecimal riskCoefficient){
         this.riskName = riskName;
-        this.riskPremium = riskPremium;
+        this.riskSumInsured = riskSumInsured;
         this.riskCoefficient = riskCoefficient;
     }
 

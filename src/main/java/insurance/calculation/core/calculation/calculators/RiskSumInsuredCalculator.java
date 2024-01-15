@@ -5,9 +5,9 @@ import insurance.calculation.dto.PolicySubObject;
 
 import java.math.BigDecimal;
 
-public abstract class RiskPremiumCalculator {
+public abstract class RiskSumInsuredCalculator {
 
-    public BigDecimal calculateRiskPremium(Policy policy) {
+    public BigDecimal calculateRiskSumInsured(Policy policy) {
         return policy.getPolicyObjects().stream()
                 .flatMap(obj->obj.getSubObjects().stream())
                 .filter(subObj->subObj.getRiskType().equals(getRiskName()))

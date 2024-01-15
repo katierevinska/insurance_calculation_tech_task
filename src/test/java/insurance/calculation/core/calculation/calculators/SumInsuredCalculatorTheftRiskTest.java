@@ -16,9 +16,9 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-public class PremiumCalculatorTheftRiskTest {
+public class SumInsuredCalculatorTheftRiskTest {
     @InjectMocks
-    private PremiumCalculatorTheftRisk calculatorTheftRisk;
+    private SumInsuredCalculatorTheftRisk calculatorTheftRisk;
 
     @Test
     public void testCalculationPremium() {
@@ -32,7 +32,7 @@ public class PremiumCalculatorTheftRiskTest {
         PolicyObject policyObject = mock(PolicyObject.class);
         when(policyObject.getSubObjects()).thenReturn(List.of(policySubObject1, policySubObject2));
         when(policy.getPolicyObjects()).thenReturn(List.of(policyObject));
-        assertEquals(calculatorTheftRisk.calculateRiskPremium(policy), BigDecimal.valueOf(100.00));
+        assertEquals(calculatorTheftRisk.calculateRiskSumInsured(policy), BigDecimal.valueOf(100.00));
 
     }
     @Test

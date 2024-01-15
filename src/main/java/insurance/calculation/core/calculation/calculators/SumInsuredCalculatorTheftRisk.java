@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 
 @Component
-class PremiumCalculatorTheftRisk extends RiskPremiumCalculator {
+class SumInsuredCalculatorTheftRisk extends RiskSumInsuredCalculator {
     @Override
     public String getRiskName() {
         return "THEFT";
