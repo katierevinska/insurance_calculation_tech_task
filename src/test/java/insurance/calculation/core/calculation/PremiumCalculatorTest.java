@@ -37,6 +37,7 @@ public class PremiumCalculatorTest {
 
         assertEquals(result.getRiskDTOS().get(0).getRiskCoefficient(), BigDecimal.valueOf(0.05));
         assertEquals(result.getRiskDTOS().get(0).getRiskSumInsured(), BigDecimal.valueOf(100.00));
+        assertEquals(result.getRiskDTOS().get(0).getRiskPremium().compareTo(BigDecimal.valueOf(5.0)), 0);
         assertEquals(result.getRiskDTOS().get(0).getRiskName(), "RISK_NAME");
     }
     @Test

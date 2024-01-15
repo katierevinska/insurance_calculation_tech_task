@@ -2,18 +2,20 @@
   "validationErrors": null,
   "calculatePremiumResult": {
     "policyNumber": "LV20-02-100000-5",
+    "totalPremium": 17.13,
     "riskDTOS": [
       {
         "riskName": "FIRE",
         "riskSumInsured": 500.00,
-        "riskCoefficient": 0.024
+        "riskCoefficient": 0.024,
+        "riskPremium": 12.00
       },
       {
         "riskName": "THEFT",
         "riskSumInsured": 102.51,
-        "riskCoefficient": 0.05
+        "riskCoefficient": 0.05,
+        "riskPremium": 5.13
       }
-    ],
-    "totalPremium": 17.13
+    ]
   }
 }

@@ -17,26 +17,30 @@ public class PremiumCalculator {
     @Autowired
     private List<RiskSumInsuredCalculator> riskSumInsuredCalculators;
 
-    public PremiumResult calculate(Policy policy){
+    public PremiumResult calculate(Policy policy) {
         List<RiskPremium> riskPremiumList = riskSumInsuredCalculators.stream()
                 .map(calculator -> calculateRiskDTO(policy, calculator))
                 .collect(Collectors.toList());
 
         BigDecimal totalPremium = riskPremiumList.stream()
-                        .map(this::calculateRiskPremium)
-                        .reduce(BigDecimal.ZERO, BigDecimal::add)
-                        .setScale(2, RoundingMode.HALF_UP)
-                        .stripTrailingZeros();
+                .map(this::calculateRiskPremium)
+                .reduce(BigDecimal.ZERO, BigDecimal::add)
+                .setScale(2, RoundingMode.HALF_UP)
+                .stripTrailingZeros();
 
         return new PremiumResult(policy.getPolicyNumber(), riskPremiumList, totalPremium);
     }
-    private BigDecimal calculateRiskPremium(RiskPremium riskPremium){
+
+    private BigDecimal calculateRiskPremium(RiskPremium riskPremium) {
         return riskPremium.getRiskSumInsured()
                 .multiply(riskPremium.getRiskCoefficient())
                 .setScale(2, RoundingMode.HALF_UP);
     }
-    private RiskPremium calculateRiskDTO(Policy policy, RiskSumInsuredCalculator calculator){
+
+    private RiskPremium calculateRiskDTO(Policy policy, RiskSumInsuredCalculator calculator) {
         BigDecimal sumInsured = calculator.calculateRiskSumInsured(policy);
-        return new RiskPremium(calculator.getRiskName(), sumInsured, calculator.getCoefficientByCost(sumInsured));
+        BigDecimal coefficient = calculator.getCoefficientByCost(sumInsured);
+        BigDecimal premium = sumInsured.multiply(coefficient).setScale(2, RoundingMode.HALF_UP);
+        return new RiskPremium(calculator.getRiskName(), sumInsured, coefficient, premium);
     }
 }

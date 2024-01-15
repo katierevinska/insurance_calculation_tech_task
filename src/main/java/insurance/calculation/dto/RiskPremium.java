@@ -8,6 +8,8 @@ public class RiskPremium {
 
     private final BigDecimal riskCoefficient;
 
+    private final BigDecimal riskPremium;
+
     public String getRiskName() {
         return riskName;
     }
@@ -20,10 +22,16 @@ public class RiskPremium {
         return riskCoefficient;
     }
 
-    public RiskPremium(String riskName, BigDecimal riskSumInsured, BigDecimal riskCoefficient){
+    public BigDecimal getRiskPremium() {
+        return riskPremium;
+    }
+
+
+    public RiskPremium(String riskName, BigDecimal riskSumInsured, BigDecimal riskCoefficient, BigDecimal riskPremium) {
         this.riskName = riskName;
         this.riskSumInsured = riskSumInsured;
         this.riskCoefficient = riskCoefficient;
+        this.riskPremium = riskPremium;
     }
 
 }
