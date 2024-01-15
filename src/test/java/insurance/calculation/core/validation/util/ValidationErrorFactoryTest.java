@@ -1,5 +1,7 @@
-package insurance.calculation.core.util;
+package insurance.calculation.core.validation.util;
 
+import insurance.calculation.core.validation.util.Placeholder;
+import insurance.calculation.core.validation.util.ValidationErrorFactory;
 import insurance.calculation.dto.ValidationError;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -11,7 +13,6 @@ import org.springframework.core.env.Environment;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;
 

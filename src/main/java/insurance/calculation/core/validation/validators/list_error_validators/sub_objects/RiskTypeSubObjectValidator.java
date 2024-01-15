@@ -1,7 +1,7 @@
 package insurance.calculation.core.validation.validators.list_error_validators.sub_objects;
 
-import insurance.calculation.core.util.Placeholder;
-import insurance.calculation.core.util.ValidationErrorFactory;
+import insurance.calculation.core.validation.util.Placeholder;
+import insurance.calculation.core.validation.util.ValidationErrorFactory;
 import insurance.calculation.dto.PolicySubObject;
 import insurance.calculation.dto.ValidationError;
 import org.springframework.beans.factory.annotation.Autowired;

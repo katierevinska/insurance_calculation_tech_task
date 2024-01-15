@@ -25,7 +25,7 @@ public class PremiumCalculatorTest {
     public void testCalculationPremiumOneCalculator() {
         Policy policy = mock(Policy.class);
         RiskSumInsuredCalculator calculator = mock(RiskSumInsuredCalculator.class);
-        ReflectionTestUtils.setField(premiumCalculator, "riskPremiumCalculators",
+        ReflectionTestUtils.setField(premiumCalculator, "riskSumInsuredCalculators",
                 List.of(calculator));
         when(calculator.getRiskName()).thenReturn("RISK_NAME");
         when(calculator.calculateRiskSumInsured(policy)).thenReturn(BigDecimal.valueOf(100.0));
@@ -45,7 +45,7 @@ public class PremiumCalculatorTest {
         RiskSumInsuredCalculator calculator1 = mock(RiskSumInsuredCalculator.class);
         RiskSumInsuredCalculator calculator2 = mock(RiskSumInsuredCalculator.class);
 
-        ReflectionTestUtils.setField(premiumCalculator, "riskPremiumCalculators",
+        ReflectionTestUtils.setField(premiumCalculator, "riskSumInsuredCalculators",
                 List.of(calculator1, calculator2));
         when(calculator1.calculateRiskSumInsured(policy)).thenReturn(BigDecimal.valueOf(100.0));
         when(calculator1.getCoefficientByCost(BigDecimal.valueOf(100.0))).thenReturn(BigDecimal.valueOf(0.05));

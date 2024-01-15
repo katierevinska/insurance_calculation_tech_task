@@ -1,4 +1,4 @@
-package insurance.calculation.core.util;
+package insurance.calculation.core.validation.util;
 
 public class Placeholder {
     private String name;

@@ -1,6 +1,6 @@
 package insurance.calculation.core.validation.validators.singl_error_validators;
 
-import insurance.calculation.core.util.ValidationErrorFactory;
+import insurance.calculation.core.validation.util.ValidationErrorFactory;
 import insurance.calculation.dto.Policy;
 import insurance.calculation.dto.ValidationError;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package insurance.calculation.core.util;
+package insurance.calculation.core.validation.util;
 
 import insurance.calculation.dto.ValidationError;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package insurance.calculation.core.validation.validators.list_error_validators.sub_objects;
 
-import insurance.calculation.core.util.ValidationErrorFactory;
+import insurance.calculation.core.validation.util.ValidationErrorFactory;
 import insurance.calculation.dto.Policy;
 import insurance.calculation.dto.PolicyObject;
 import insurance.calculation.dto.PolicySubObject;
@@ -11,7 +11,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;

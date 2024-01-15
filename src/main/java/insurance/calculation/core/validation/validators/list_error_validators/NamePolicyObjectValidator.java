@@ -1,6 +1,6 @@
 package insurance.calculation.core.validation.validators.list_error_validators;
 
-import insurance.calculation.core.util.ValidationErrorFactory;
+import insurance.calculation.core.validation.util.ValidationErrorFactory;
 import insurance.calculation.dto.Policy;
 import insurance.calculation.dto.PolicyObject;
 import insurance.calculation.dto.ValidationError;

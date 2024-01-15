@@ -1,6 +1,6 @@
 package insurance.calculation.core.validation.validators.list_error_validators;
 
-import insurance.calculation.core.util.ValidationErrorFactory;
+import insurance.calculation.core.validation.util.ValidationErrorFactory;
 import insurance.calculation.dto.Policy;
 import insurance.calculation.dto.PolicyObject;
 import insurance.calculation.dto.ValidationError;
@@ -13,7 +13,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
