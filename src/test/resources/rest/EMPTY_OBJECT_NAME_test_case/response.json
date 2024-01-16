@@ -1,9 +1,0 @@
-{
-  "validationErrors": [
-    {
-      "errorDescription": "field policy object name must not be empty",
-      "errorCode": "EMPTY_OBJECT_NAME"
-    }
-  ],
-  "calculatePremiumResult": null
-}

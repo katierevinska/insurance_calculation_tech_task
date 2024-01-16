@@ -1,9 +1,0 @@
-{
-  "validationErrors": [
-    {
-      "errorDescription": "field policy sub-object insurance cost of object House must not be empty",
-      "errorCode": "EMPTY_SUB_OBJECT_COST"
-    }
-  ],
-  "calculatePremiumResult": null
-}

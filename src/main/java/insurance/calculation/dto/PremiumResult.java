@@ -13,7 +13,7 @@ public class PremiumResult {
         return totalPremium;
     }
 
-    public List<RiskPremium> getRiskDTOS() {
+    public List<RiskPremium> getRiskPremiums() {
         return riskPremiums;
     }
 
